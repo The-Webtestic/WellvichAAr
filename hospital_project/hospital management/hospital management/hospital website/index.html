@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WellvichAAR</title>
+
+    <script
+      src="https://kit.fontawesome.com/f06c8901c6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Heebo:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Heebo:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Heebo:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      
+      /* Responsive styles */
+      @media (max-width: 768px) {
+        .navbar-links {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          background-color: #d9fffe;
+          position: absolute;
+          top: 60px;
+          right: -40px;
+          border-radius: 10px;
+        }
+
+        .navbar-links.active {
+          display: flex;
+        }
+
+        .navbar-toggle {
+          cursor: pointer;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .navbar-toggle .bar {
+          width: 25px;
+          height: 3px;
+          background-color: rgb(2, 2, 2);
+        }
+
+        .right-icons {
+          margin-left: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><img src="images/logo1.jpg" alt="" /></div>
+      <div class="icon-menu">
+        <div class="toggle-item">
+          <div class="navbar-toggle" id="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+
+        <!-- <nav class="navbar">
+                  <a href="#Home">Home</a>
+                  <a href="#about">About</a>
+                  <a href="#services">Services</a>
+                  <a href="../contact.html">Contact</a>
+                </nav> -->
+
+        <nav class="navbar">
+          <div class="navbar-container">
+            <div class="navbar-links" id="navbar-links">
+              <a href="#Home">Home</a>
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="../contact.html">Contact</a>
+            </div>
+
+            <div class="right-icons">
+              <div id="menu-bars" class="fas fa-bars"></div>
+              <a href="/contact.html" class="btn">Start Counselling</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- header section ended -->
+    <!-- home -->
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Welcome to WellvichAAr</h3>
+        <p>
+          where our team of psychologists commited to nurturing your mental
+          health. find your serenity with us.
+        </p>
+        <a href="../contact.html" class="btn">Contact Us</a>
+      </div>
+    </section>
+
+    <!-- home end -->
+
+    <!-- About us section started -->
+
+    <style>
+      .main-about {
+        padding: 20px;
+      }
+      
+      .about-heading {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+      
+      .inner-main-about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      
+      .about-inner-content-left {
+        flex: 1 1 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .about-inner-content-left img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .about-inner-content {
+        flex: 1 1 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .about-right-content {
+        max-width: 600px;
+      }
+      
+      .about-right-content-heading {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+      }
+      
+      .paragraph-aboutus {
+        font-size: 1em;
+        line-height: 1.6;
+      }
+      
+      /* Responsive styles */
+      @media (max-width: 768px) {
+        .inner-main-about {
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        .about-inner-content-left {
+          order: 1;
+          width: 100%;
+          margin-top: 20px;
+        }
+      
+        .about-inner-content {
+          order: 3;
+          width: 100%;
+        }
+      
+        .about-right-content-heading {
+          font-size: 1.2em;
+          text-align: center;
+        }
+      
+        .paragraph-aboutus {
+          font-size: 0.9em;
+          text-align: center;
+        }
+      
+        .about-inner-content-left img {
+          margin-bottom: 20px;
+        }
+      }
+      </style>
+      
+
+    <div class="main-about" id="about">
+      <div class="about-heading">About Us</div>
+
+      <div class="inner-main-about">
+        <div class="about-inner-content-left">
+          <img src="images/yoga.avif" alt="" />
+        </div>
+
+        <div class="about-inner-content">
+          <div class="about-right-content">
+            <h2 class="about-right-content-heading">
+              We're setting Standards in Research.
+            </h2>
+
+            <p class="paragraph-aboutus">
+              At Well Vichaar, we believe in nurturing the next generation of
+              mental health professionals. That's why we offer internship
+              programs in various therapeutic modalities such as Cognitive
+              Behavioral Therapy (CBT), Rational Emotive Behavior Therapy
+              (REBT), Hypnotherapy, Expressive Art Therapy, and more. Our
+              interns receive comprehensive training and hands-on experience
+              under the guidance of our seasoned team of psychologists and
+              psychiatrists. Additionally, we provide project services including
+              synopsis, research paper, dissertation, and thesis writing,
+              ensuring that our clients receive expert assistance in their
+              academic pursuits. Join us in shaping the future of mental
+              wellness while advancing your career or academic goals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About us section ends -->
+
+    <!-- About Rozi-->
+
+    <!-- <div class="rozi-about ">
+      <div class="inner-rozi-about ">
+        <div class="about-rozi-content-left">
+          <img src="images/rozi.jpg" alt="" />
+        </div>
+
+        <div class="about-rozi-content ">
+          <div class="about-rozi-content">
+            <h2>Meet Miss. Rozi</h2>
+
+            <p>
+              Rozi is a Counseling Psychologist with a postgraduate degree in
+              psychology and extensive training in guidance and counseling. As a
+              certified hypnotherapist, she offers a diverse range of skills to
+              support individuals in their mental health journeys.<br /><br />
+
+              Rozi specializes in providing exceptional care and tailored
+              treatment plans for children, adolescents, and adults. Her
+              expertise includes psychometric testing, Cognitive Behavioral
+              Therapy (CBT), Rational Emotive Behavior Therapy (REBT), and
+              Hypnotherapy. She is proficient in conducting mental status
+              examinations, taking detailed case histories, and developing
+              effective interventions.<br /><br />
+
+              Her approach is compassionate and solution-oriented, focusing on
+              building strong, trusting relationships with clients. Recognized
+              for her ability to motivate, communicate, and manage diverse
+              personalities, Rozi excels in diffusing stressful situations and
+              achieving challenging goals.<br /><br />
+
+              Rozi is passionate about making a positive impact in the field of
+              clinical psychology and looks forward to supporting you on your
+              path to mental wellness.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="main" style="display: block; margin: 0px; height: auto">
+      <div class="container">
+        <div class="rozi-about">
+          <div class="box1 rozi-box">
+            <div class="about-rozi-content-left">
+              <img src="images/rozi.jpg" alt="" class="rozi-image" />
+            </div>
+
+            <div class="about-rozi-content">
+              <h3>Meet Miss. Rozi</h3>
+              <p>
+                Rozi is a Counseling Psychologist with a postgraduate degree in
+                psychology and extensive training in guidance and counseling. As
+                a certified hypnotherapist, she offers a diverse range of skills
+                to support individuals in their mental health journeys.
+              </p>
+              <div class="extra-text">
+                <p>
+                  Rozi specializes in providing exceptional care and tailored
+                  treatment plans for children, adolescents, and adults. Her
+                  expertise includes psychometric testing, Cognitive Behavioral
+                  Therapy (CBT), Rational Emotive Behavior Therapy (REBT), and
+                  Hypnotherapy. She is proficient in conducting mental status
+                  examinations, taking detailed case histories, and developing
+                  effective interventions.
+                </p>
+                <p>
+                  Her approach is compassionate and solution-oriented, focusing
+                  on building strong, trusting relationships with clients.
+                  Recognized for her ability to motivate, communicate, and
+                  manage diverse personalities, Rozi excels in diffusing
+                  stressful situations and achieving challenging goals.
+                </p>
+                <p>
+                  Rozi is passionate about making a positive impact in the field
+                  of clinical psychology and looks forward to supporting you on
+                  your path to mental wellness.
+                </p>
+              </div>
+              <button class="show-more" onclick="toggleText()">
+                Know More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Rozi ends -->
+
+    <!-- services -->
+
+    <div class="services top-wrapper services1" id="services">
+      <div class="slider-container box-container">
+        <div>
+          <h2
+            class="heading"
+            style="
+              text-align: center;
+              margin-top: 8rem;
+              font-size: 4rem;
+              color: var(--maincolor);
+              font-family: Josefin Sans, sans-serif;
+            "
+          >
+            our services
+          </h2>
+        </div>
+        <div class="slider-wrapper">
+          <button id="prev-slide" class="slide-button material-symbols-rounded">
+            <
+          </button>
+          <ul class="image-list">
+            <div class="box">
+              <img src="images/individual.jpeg" alt="" class="image-item" />
+              <h3>Individual Therapy</h3>
+              <p>
+                Discover your inner strength & find peace through individual
+                therapy.
+              </p>
+            </div>
+
+            <div class="box">
+              <img src="images/- Group Therapy.jpg" alt="" class="image-item" />
+              <h3>Group Therapy</h3>
+              <p>Discover strenth through transformating group therapy.</p>
+            </div>
+
+            <div class="box">
+              <img src="images/Couples.avif" alt="" class="image-item" />
+              <h3>Couples Therapy</h3>
+              <p>Reignite your love & connection through couples therapy.</p>
+            </div>
+
+            <div class="box">
+              <img src="images/Family.jpg" alt="" class="image-item" />
+              <h3>Family Therapy</h3>
+              <p>Strenthen bonds & nurture a family through family therapy.</p>
+            </div>
+
+            <div class="box">
+              <img src="images/child.avif" alt="" class="image-item" />
+              <h3>Child & Adolescent Therapy</h3>
+              <p>
+                Discover express their feelings through child & adolescent
+                therapy .
+              </p>
+            </div>
+          </ul>
+          <button id="next-slide" class="slide-button material-symbols-rounded">
+            >
+          </button>
+        </div>
+        <div class="slider-scrollbar">
+          <div class="scrollbar-track">
+            <div class="scrollbar-thumb"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services end-->
+
+    <!-- test -->
+
+    <!-- test end -->
+
+    <!-- Specializations -->
+    <div class="services top-wrapper">
+      <div class="slider-container box-container">
+        <div>
+          <h2
+            class="heading"
+            style="
+              text-align: center;
+              margin-top: 8rem;
+              font-size: 4rem;
+              color: var(--maincolor);
+              font-family: Josefin Sans, sans-serif;
+            "
+          >
+            our Specializations
+          </h2>
+        </div>
+        <div class="slider-wrapper">
+          <button id="prev-slide" class="slide-button material-symbols-rounded">
+            <
+          </button>
+          <ul class="image-list">
+            <div class="box">
+              <img src="images/greif.jpg" alt="" class="image-item" />
+              <h3>Grief Counseling</h3>
+              <p>
+                Discover to help people navigate this complex process and learn
+                how to grieve in a healthy way.
+              </p>
+            </div>
+
+            <div class="box">
+              <img src="images/anxiety.avif" alt="" class="image-item" />
+              <h3>Anxiety & Depression</h3>
+              <p>
+                Discover 'self-talk', reality testing, attention training,
+                cognitive challenging and cognitive restructuring.
+              </p>
+            </div>
+
+            <div class="box">
+              <img src="images/Phobia.jpg" alt="" class="image-item" />
+              <h3>Phobia Treatment</h3>
+              <p>
+                Relaxation techniquest that help you cope with physical symptoms
+                very effective for treating phobias.
+              </p>
+            </div>
+
+            <div class="box">
+              <img src="images/stress.jpg" alt="" class="image-item" />
+              <h3>Stress Management</h3>
+              <p>
+                Stress management offers a range of ways to help you better deal
+                with stress and difficulty, also called adversity, in your life.
+              </p>
+            </div>
+
+            <div class="box">
+              <img src="images/positive.avif" alt="" class="image-item" />
+              <h3>Positive Psychology</h3>
+              <p>
+                “Positive Psychology is the scientific study of human
+                flourishing, and an applied approach to optimal functioning.
+              </p>
+            </div>
+
+            <div class="box">
+              <img src="images/Hypno.jpg" alt="" class="image-item" />
+              <h3>Hypnotherapy</h3>
+              <p>
+                Hypnosis is a changed state of awareness and increased
+                relaxation that allows for improved focus and concentration.
+              </p>
+            </div>
+
+            <div class="box">
+              <img src="images/Expressive.avif" alt="" class="image-item" />
+              <h3>Expressive Art Therapy</h3>
+              <p>
+                Expressive Arts Therapy uses many different forms of art making
+                processes and a collaborative approach to help people creatively
+                express themselves.
+              </p>
+            </div>
+          </ul>
+          <button id="next-slide" class="slide-button material-symbols-rounded">
+            >
+          </button>
+        </div>
+        <div class="slider-scrollbar">
+          <div class="scrollbar-track">
+            <div class="scrollbar-thumb"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Specializations end-->
+
+    <!-- our doctors -->
+
+    <style>
+      .team-wrapper {
+      padding: 20px;
+    }
+    
+    .team-heading {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    
+    .team-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .team1 {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
+    
+    .team1-left, .team1-right {
+      padding: 10px;
+    }
+    
+    .team1-left {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .team1-left img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    
+    .team1-right {
+      flex: 2;
+    }
+    
+    .team1-para {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      padding: 1rem;
+    }
+    
+    .name_post {
+      text-align: center;
+    }
+    
+    .name {
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+    
+    .deg {
+      font-size: 1rem;
+    }
+    
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .team1 {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .team1-right {
+        text-align: center;
+        padding: 1rem;
+      }
+    
+      .team1-para {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    
+      .name {
+        font-size: 1.5rem;
+      }
+    
+      .deg {
+        font-size: 1.2rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .team1-para {
+        font-size: 0.9rem;
+        padding: 1rem;
+      }
+    
+      .name {
+        font-size: 1.25rem;
+      }
+    
+      .deg {
+        font-size: 1rem;
+      }
+    }    
+    </style>
+
+    <div class="team-wrapper">
+      <h2 class="team-heading" style="
+      text-align: center;
+      margin-top: 8rem;
+      font-size: 4rem;
+      color: var(--maincolor);
+      font-family: Josefin Sans, sans-serif;
+    ">Our Team</h2>
+      <div class="team-container">
+        <div class="team1">
+          <div class="team1-left">
+            <div class="image-desc">
+              <img src="images/prachi mittal.pdf" alt="" style="width: 200px" />
+              <div class="name_post">
+                <p
+                  class="name"
+                  style="
+                    font-weight: 600;
+
+                    font-size: 20px;
+                  "
+                >
+                  Prachi Mittal
+                </p>
+
+                <p class="deg" style="font-size: 15px">Clinical Psychologist</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="team1-right">
+            <p
+              class="team1-para"
+              style="
+                font-size: 1.3rem;
+                padding: 1.5rem 0;
+
+                text-align: left;
+                line-height: 1.5rem;
+              "
+            >
+              Prachi Mittal is a highly accomplished and dedicated Clinical
+              Psychologist with a wealth of experience and numerous significant
+              contributions in the field of psychology. With a professional
+              background that spans a diverse range of clinical and research
+              areas, Prachi has proven herself as a trailblazer in the field of
+              clinical psychology. Holding certification from the Rehabilitation
+              Council of India (RCI), she has solidified her expertise through
+              an impressive repertoire of achievements. .<br /><br />
+
+              Driven by a deep-rooted passion for understanding, nurturing, and
+              healing the human mind, Prachi has established herself not only as
+              a clinician and researcher, but also as a compassionate advocate
+              for mental health. Her professional ethos is characterized by a
+              commitment to evidence-based practice, empathy, and unwavering
+              support for her clients. Prachi Mittal’s journey as a Clinical
+              Psychologist has been marked by a relentless pursuit of knowledge,
+              a steadfast dedication to her clients, and an unwavering
+              commitment to advancing the understanding and treatment of mental
+              health challenges. Her exceptional blend of clinical skill,
+              research contributions, and innovative spirit stand as a testament
+              to her enduring impact within the field of psychology. .<br /><br />
+            </p>
+          </div>
+        </div>
+
+        <div class="team1 team2">
+          <div class="team1-left">
+            <div class="image-desc">
+              <img src="images/pragati.jpg" alt="" style="width: 200px" />
+              <div class="name_post">
+                <p
+                  class="name"
+                  style="
+                    font-weight: 600;
+
+                    font-size: 20px;
+                  "
+                >
+                  Pragati Aggarwal
+                </p>
+
+                <p class="deg" style="font-size: 15px">
+                  Counseling Psychologist
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="team1-right team1-right-left">
+            <p
+              class="team1-para"
+              style="
+                font-size: 1.3rem;
+                padding: 1.5rem 0;
+
+                text-align: left;
+                line-height: 1.5rem;
+              "
+            >
+              I am a dedicated Counseling Psychologist, aiming to work towards
+              mental health. I have completed my post graduation in Clinical
+              Psychology. I have work experience of more than 2 years and an
+              extensive training in the same discipline. I am experienced in
+              dealing with anxiety issues, mood related problems, stress
+              management, work-life balance, anger management, relationship
+              issues, adjustment problems, self-esteem related issues, personal
+              conflicts, lack of motivation. I am here to extend my area towards
+              mental health, mostly I follow an eclectic approach in my
+              sessions.
+              <br /><br />
+
+              Most of my previous work experience includes clinical settings,
+              where I worked with children and adults, the population vary in
+              the age range starting from adolescence to older adulthood, also
+              been part of various workshops and webinars. I also worked for
+              underprivileged children as a volunteer with an NGO. I define
+              myself as a social, communicative and empathetic individual.
+              <br /><br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+            
+
+    <!-- our doctors ended -->
+
+    <!-- footer -->
+    
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">
+          <h3>Contact Us</h3>
+          <p><span>Email:</span> <a href="mailto:wellvichaar@gmail.com">wellvichaar@gmail.com</a></p>
+          <p><span>Phone:</span> <a href="tel:+91 85958 71247">+91 85958 71247</a></p>
+        </div>
+        <div class="footer-content">
+          <h3>Quick Links</h3>
+          <ul class="list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h3>Policies</h3>
+          <ul class="list">
+            <li><a href="/hospital management/terms.html">Terms and conditions</a></li>
+            <li><a href="/hospital management/terms.html">Privacy Policy</a></li>
+            <li><a href="/hospital management/terms.html">Counselling area</a></li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h3 class="footer-follow">Follow Us</h3>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-bar">
+        <p>&copy;2024 WellvichAAr . All Rights Reserved <span>Design By</span> <a href="https://www.linkedin.com/company/webtestic1017/">The Webtestic</a></p>
+      </div>
+    </footer>
+
+    <!-- footer ended -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

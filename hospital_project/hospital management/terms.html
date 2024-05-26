@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms and Condition Section Tabs In HTML CSS and Javascript</title>
+
+    <script
+      src="https://kit.fontawesome.com/f06c8901c6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Heebo:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Heebo:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Heebo:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="terms.css" />
+
+    <link
+      rel="stylesheet"
+      href="./hospital management/hospital website/style.css"
+    />
+    <style>
+      .show-more {
+        display: none;
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      /* Styles for small screens */
+      
+
+    
+
+      /* Responsive styles */
+      @media (max-width: 768px) {
+       
+        .navbar-links {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          background-color: #d9fffe;
+          position: absolute;
+          top: 60px;
+          right: -40px;
+          border-radius: 10px;
+        }
+
+        .navbar-links.active {
+          display: flex;
+        }
+
+        .navbar-toggle {
+          cursor: pointer;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .navbar-toggle .bar {
+          width: 25px;
+          height: 3px;
+          background-color: rgb(2, 2, 2);
+        }
+
+        .right-icons {
+          margin-left: auto;
+        }
+        .wrapper{
+        margin-top: -50px;
+          padding: 0px;
+        }
+        footer{
+          margin-top: -5px !important;
+         padding-top: 50px;
+        }
+        
+        .tc_wrap .tabs_list{
+          width: 100%;
+        }
+        .tc_wrap .tabs_content .tab_body .tab_item p {
+          font-size: small;
+        }
+      }
+      .wrapper{
+        margin-top: 100px;
+      }
+      .tc_wrap .tabs_content .tab_body .tab_item p::-webkit-scrollbar {
+        display: none;
+} 
+.tc_wrap .tabs_content .tab_body .tab_item p {
+    scrollbar-width: none; /* Firefox */
+}
+
+/* General */
+.tc_wrap .tabs_content .tab_body .tab_item p {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    overflow-y: scroll; /* Ensure scrolling is enabled */
+}
+     
+    </style>
+  </head>
+  <body >
+    <header>
+      <div class="logo">
+        <img
+          src="./hospital management/hospital website/images/logo1.jpg"
+          alt=""
+        />
+      </div>
+      <div class="icon-menu">
+        <div class="toggle-item">
+          <div class="navbar-toggle" id="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+
+        <!-- <nav class="navbar">
+                  <a href="#Home">Home</a>
+                  <a href="#about">About</a>
+                  <a href="#services">Services</a>
+                  <a href="../contact.html">Contact</a>
+                </nav> -->
+
+        <nav class="navbar">
+          <div class="navbar-container">
+            <div class="navbar-links" id="navbar-links">
+              <a href="./hospital management/hospital website/index.html">Home</a>
+              <a href="./hospital management/hospital website/index.html">About</a>
+              <a href="./hospital management/hospital website/index.html">Services</a>
+              <a href="./hospital management/contact.html">Contact</a>
+            </div>
+
+            <div class="right-icons">
+              <div id="menu-bars" class="fas fa-bars"></div>
+              <a href="./hospital management/contact.html" class="btn">Start Counselling</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="wrapper flex_align_justify">
+      <div class="tc_wrap">
+        <div class="tabs_list">
+          <ul>
+            <li data-tc="tab_item_1" class="active">Terms and Conditions</li>
+            <li data-tc="tab_item_2">Privacy Policy</li>
+            <li data-tc="tab_item_3">Counseling Area</li>
+          </ul>
+        </div>
+        <div class="tabs_content">
+          <div class="tab_head">
+            <h2>Terms & Conditions</h2>
+          </div>
+          <div class="tab_body">
+            <div class="tab_item tab_item_1">
+              <p>
+                <span style="color: black; font-weight: bold"
+                  >Confidentiality:</span
+                >
+                Your information is strictly confidential except in cases of
+                harm to self or others. <br /><br />
+
+                <span style="color: black; font-weight: bold"
+                  >Appointments:</span
+                >
+                Sessions must be booked at least 2 days in advance. Clients are
+                required to notify us at least 24 hours in advance for
+                cancellations or rescheduling. While refunds will not be
+                provided for cancellations, clients can reschedule their
+                appointments if needed. <br /><br />
+
+                <span style="color: black; font-weight: bold">Payment: </span>We
+                accept payment only via credit/debit cards or electronic funds
+                transfer at the time of the session. <br /><br />
+
+                <span style="color: black; font-weight: bold"
+                  >Therapeutic Relationship:</span
+                >
+                We work together with respect and trust towards agreed-upon
+                goals. <br /><br />
+
+                <span style="color: black; font-weight: bold">Boundaries: </span
+                >We maintain professional boundaries and avoid dual
+                relationships. <br /><br />
+
+                <span style="color: black; font-weight: bold"
+                  >Emergencies:</span
+                >
+                Seek immediate assistance in emergencies; we can provide support
+                and resources. <br /><br />
+
+                <span style="color: black; font-weight: bold"
+                  >Termination: </span
+                >Either party can end therapy at any time; referrals will be
+                provided if needed. <br /><br />
+
+                <span style="color: black; font-weight: bold">Records:</span>
+                Records are securely maintained; clients can access
+                them upon request.
+              </p>
+            </div>
+            <div class="tab_item tab_item_2">
+              <h3>Privacy Policy</h3>
+              <p>
+                <span style="color: black; font-weight: bold"
+                  >Information Collection:</span
+                >
+                We collect personal information for therapy purposes only.
+                <br /><br />
+                <span style="color: black; font-weight: bold"
+                  >Data Security: </span
+                >We use industry-standard security measures to protect your
+                data. <br /><br />
+                <span style="color: black; font-weight: bold"
+                  >Confidentiality:</span
+                >
+                Your information is kept confidential, except as required by
+                law. <br /><br />
+                <span style="color: black; font-weight: bold"
+                  >Data Retention: </span
+                >We retain your information as long as necessary and securely
+                dispose of it afterward. <br /><br />
+                <span style="color: black; font-weight: bold"
+                  >Third-party Disclosure:</span
+                >
+                We do not share your information with third parties without your
+                consent, except as required by law. <br /><br />
+                <span style="color: black; font-weight: bold"
+                  >Your Rights: </span
+                >You have the right to access, correct, or request deletion of
+                your information.
+              </p>
+            </div>
+
+            <div class="tab_item tab_item_3">
+              <h3>Counseling Area</h3>
+
+              <p>
+                <span style="color: black; font-weight: bold"
+                  >Personal or Individual Counseling: </span
+                >Your Journey to Self-Discovery Begins Here <br /><br />
+                <span style="color: black; font-weight: bold"
+                  >Mindfulness: </span
+                >Find Peace Within, Flourish in Every Moment <br /><br />
+                <span style="color: black; font-weight: bold"
+                  >Couple Counseling:</span
+                >
+                Reignite the Flame, Rewrite Your Love Story <br /><br />
+                <span style="color: black; font-weight: bold"
+                  >Family Counseling:</span
+                >
+                Together, We Strengthen the Heart of Your Family <br /><br />
+                <span style="color: black; font-weight: bold"
+                  >Career and Academic Counseling:</span
+                >
+                Empowering Dreams, Shaping Futures <br /><br />
+                <span style="color: black; font-weight: bold"
+                  >Group Therapy:</span
+                >
+                In Unity, Healing Flourishes. <br /><br />
+                <span style="color: black; font-weight: bold">Depression:</span>
+                You're Not Alone: Healing Hearts, Restoring Hope <br /><br />
+                <span style="color: black; font-weight: bold"
+                  >Stress Management:</span
+                >
+                From Chaos to Calm: Embrace Serenity. <br /><br />
+                <span style="color: black; font-weight: bold"
+                  >Anxiety Issues:</span
+                >
+                Embrace Courage, Conquer Anxiety <br /><br />
+                <span style="color: black; font-weight: bold"
+                  >Relationship Issues:</span
+                >
+                Transforming Struggles into Strengths: Your Relationship
+                Renewed. <br /><br />
+                <span style="color: black; font-weight: bold"
+                  >Work-Life Balance:</span
+                >
+                Discover Harmony, Live Your Best Life <br /><br />
+                <span style="color: black; font-weight: bold"
+                  >Post-Traumatic Stress Disorder:</span
+                >
+                From Survival to Thriving: Reclaiming Your Life <br /><br />
+                <span style="color: black; font-weight: bold"
+                  >Low Self-Esteem and Confidence:</span
+                >
+                Rise Stronger, Shine Brighter <br /><br />
+                <span style="color: black; font-weight: bold"
+                  >Body Image Issues:</span
+                >
+                Embrace Your Beauty, Empower Your Spirit <br /><br />
+                <span style="color: black; font-weight: bold"
+                  >Emotional Stability:</span
+                >
+                Navigating Life's Storms with Resilience <br /><br />
+                <span style="color: black; font-weight: bold"
+                  >Sleep Issues:</span
+                >
+                Awaken Your Dreams: Restful Nights, Radiant Days <br /><br />
+                <span style="color: black; font-weight: bold"
+                  >Low Motivation and Energy:</span
+                >
+                Ignite Your Passion, Energize Your Purpose <br /><br />
+                <span style="color: black; font-weight: bold"
+                  >Personal and Professional Growth:</span
+                >
+                Unleash Your Potential, Transform Your World. <br /><br />
+                <span style="color: black; font-weight: bold"
+                  >Goal Setting and Manifestation:</span
+                >
+                Dream It, Believe It, Achieve It. <br /><br />
+                <span style="color: black; font-weight: bold">Addiction:</span>
+                Break Free, Embrace Renewal. <br /><br />
+                <span style="color: black; font-weight: bold">Grief:</span>
+                Honoring Loss, Embracing Healing. <br /><br />
+                <span style="color: black; font-weight: bold"
+                  >Career Management:</span
+                >
+                Empowering Your Career Journey, One Step at a Time.
+              </p>
+            </div>
+            <div class="tab_item tab_item_4" style="display: none">
+              <h3>Termination clause</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis quae ipsa, enim aspernatur ducimus vero! Repellendus
+                exercitationem dolore, voluptatibus consectetur facere eveniet
+                in, corporis, nostrum animi unde recusandae repudiandae.
+                Excepturi.
+              </p>
+            </div>
+            <div class="tab_item tab_item_5" style="display: none">
+              <h3>Governing law</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem alias nemo eius aspernatur doloremque laboriosam
+                velit, consequatur nesciunt, ipsum facere autem, dicta quam
+                consectetur! Nostrum quae odit adipisci omnis asperiores!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem alias nemo eius aspernatur doloremque laboriosam
+                velit, consequatur nesciunt, ipsum facere autem, dicta quam
+                consectetur! Nostrum quae odit adipisci omnis asperiores!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem alias nemo eius aspernatur doloremque laboriosam
+                velit, consequatur nesciunt, ipsum facere autem, dicta quam
+                consectetur! Nostrum quae odit adipisci omnis asperiores!
+              </p>
+            </div>
+          </div>
+          <div class="tab_foot flex_align_justify"></div>
+        </div>
+      </div>
+    </div>
+
+            
+
+    <!-- footer -->
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">
+          <h3>Contact Us</h3>
+          <p><span>Email:</span> <a href="mailto:wellvichaar@gmail.com">wellvichaar@gmail.com</a></p>
+          <p><span>Phone:</span> <a href="tel:+91 85958 71247">+91 85958 71247</a></p>
+        </div>
+        <div class="footer-content">
+          <h3>Quick Links</h3>
+          <ul class="list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h3>Policies</h3>
+          <ul class="list">
+            <li><a href="/hospital management/terms.html">Terms and conditions</a></li>
+            <li><a href="/hospital management/terms.html">Privacy Policy</a></li>
+            <li><a href="/hospital management/terms.html">Counselling area</a></li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h3 class="footer-follow">Follow Us</h3>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-bar">
+        <p>&copy;2024 WellvichAAr . All Rights Reserved <span>Design By</span> <a href="https://www.linkedin.com/company/webtestic1017/">The Webtestic</a></p>
+      </div>
+    </footer>
+
+    <!-- footer ended -->
+
+    <script type="text/javascript" src="terms.js"></script>
+  </body>
+</html>
